@@ -34,23 +34,27 @@ Le site comprend les sections suivantes :
 text
 le portfolio/
 │
-├── index.html
-├── README.md
+├── .venv/
 │
 ├── css/
 │   └── style.css
 │
-├── js/
-│   └── script.js
+├── documents/
+│   └── CV.pdf
 │
 ├── images/
 │   └── profil.jpg
 │
-├── documents/
-│   └── CV.pdf
+├── js/
+│   └── script.js
 │
-└── video/
-    └── PRESENTATION1
+├── video/
+│   └── PRESENTATION1
+│
+├── .gitignore
+├── index.html
+├── maquette.html
+└── README.md
 
 
 ## 5. Responsive Design
@@ -110,3 +114,8 @@ Les liens GitHub présents dans le portfolio sont les suivants :
 - **Profil GitHub** : https://github.com/kkdnamizata-netizen
 
 Les liens externes du site sont configurés pour s'ouvrir dans un nouvel onglet.
+## Accéder au portfolio en ligne
+
+Mon portfolio est accessible ici :
+
+https://kkdnamizata-netizen.github.io/portfolio-personnel/
