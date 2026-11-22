@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquette du Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #eeeeee;
+        }
+
+        .maquette {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 15px;
+        }
+
+        header, footer {
+            background: #8585c7;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .accueil {
+            background: #e9ad8d;
+            padding: 65px 20px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .projets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .projet {
+            flex: 1 1 280px;
+            background: #d5dddd;
+            padding: 55px 10px;
+            text-align: center;
+        }
+
+        .bas {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .cv, .contact {
+            flex: 1;
+            background: #c6b9a3;
+            padding: 45px 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .projets, .bas {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maquette">
+        <header>
+            HEADER : Logo | Accueil | Projets | CV | Contact
+        </header>
+
+        <section class="accueil">
+            SECTION ACCUEIL (HERO)
+            <p>Photo de profil</p>
+            <p>Nom et prénom</p>
+            <p>Présentation personnelle</p>
+            <p>Recherche de stage</p>
+            <p>Bouton : Voir mes projets</p>
+        </section>
+
+        <h2>MES PROJETS</h2>
+
+        <section class="projets">
+            <article class="projet">ARTICLE PROJET 1</article>
+            <article class="projet">ARTICLE PROJET 2</article>
+            <article class="projet">ARTICLE PROJET 3</article>
+            <article class="projet">ARTICLE PROJET 4</article>
+            <article class="projet">ARTICLE PROJET 5</article>
+        </section>
+
+        <div class="bas">
+            <section class="cv">
+                SECTION CV
+                <p>Formation</p>
+                <p>Compétences</p>
+                <p>Expériences</p>
+                <p>Télécharger CV PDF</p>
+            </section>
+
+            <section class="contact">
+                SECTION CONTACT
+                <p>Formulaire de contact</p>
+                <p>Adresse e-mail</p>
+                <p>GitHub</p>
+                <p>LinkedIn</p>
+            </section>
+        </div>
+
+        <footer>
+            FOOTER : Liens et informations complémentaires
+        </footer>
+    </div>
+</body>
+</html>

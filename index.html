@@ -1,0 +1,308 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Khady Namizata</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        principal: '#243447',
+                        principalDark: '#1b2c3a',
+                        secondaire: '#3976ad',
+                        secondaireDark: '#2c5e8a',
+                        clair: '#e8f1fa'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-principal bg-clair">
+
+    <header class="bg-principal text-white py-5 shadow-lg">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center px-6 gap-4">
+            <a href="#accueil" class="text-2xl font-bold tracking-wider">KHADY NAMIZATA</a>
+
+            <ul class="flex flex-wrap gap-5 text-sm md:text-base">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#video">Vidéo</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="bg-gradient-to-br from-principal to-secondaire text-white py-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+
+            <div class="md:w-1/2 text-center md:text-left">
+                <p class="uppercase tracking-widest text-blue-200 mb-4">
+                    Bienvenue sur mon portfolio
+                </p>
+
+                <h1 class="text-4xl md:text-5xl font-bold mb-5">
+                    Bonjour, je suis<br>
+                    Kamagate Khady Djamila Namizata
+                </h1>
+
+                <h2 class="text-xl md:text-2xl mb-6 text-blue-100">
+                    Étudiante en Computer Science
+                    <span class="block text-lg mt-2">
+                        Spécialité : Réseaux informatiques et télécommunications
+                    </span>
+                </h2>
+
+                <p class="text-lg leading-relaxed mb-4">
+                    Découvrez mon parcours académique, mes compétences et mes réalisations.
+                </p>
+
+                <p class="text-lg leading-relaxed mb-8">
+                    Je suis à la recherche d'une opportunité de stage afin de mettre en pratique mes connaissances.
+                </p>
+
+                <a href="#projets" class="inline-block bg-white text-principal font-bold py-3 px-7 rounded-lg shadow-lg hover:bg-blue-100 transition">
+                    Découvrir mes projets
+                </a>
+            </div>
+
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-white p-3 rounded-full shadow-2xl">
+                    <img
+                        src="images/profil.jpg"
+                        alt="Photo de Kamagate Khady Djamila Namizata"
+                        class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="apropos" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">À propos de moi</h2>
+
+        <p class="max-w-3xl mx-auto text-center text-lg leading-relaxed">
+            Étudiante en Computer Science, spécialisée en réseaux informatiques et télécommunications, je m'intéresse particulièrement aux nouvelles technologies, au développement informatique et aux réseaux. Désireuse de mettre mes acquis et mes compétences au service de votre structure, je souhaite également enrichir mes connaissances, développer mon savoir-faire et acquérir une expérience professionnelle à travers un stage.
+        </p>
+    </section>
+
+    <section id="competences" class="bg-white py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center">Compétences</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Python</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">HTML5</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Langage C</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">SQL</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">SQLite</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Bases de données</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Configuration IP</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Réseaux locaux</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Câblage Ethernet RJ45</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Fibre optique</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Systèmes d'exploitation</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Réseaux mobiles GSM</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Commutation</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Visual Studio Code</div>
+                <div class="p-5 bg-clair rounded-xl shadow text-center font-semibold">Git et GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-10 text-center">Ma formation</h2>
+
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondaire">
+            <h3 class="text-2xl font-bold mb-4">
+                Formation en fibre optique
+            </h3>
+
+            <p class="text-lg font-semibold text-secondaire mb-3">
+                MG LAB – Laboratoire de Formation pratique en Fibre Optique
+            </p>
+
+            <p class="text-gray-600">
+                Formation dans le domaine des réseaux et télécommunications.
+            </p>
+        </div>
+    </section>
+
+    <section id="projets" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-4 text-center">Mes projets</h2>
+
+        <p class="text-center text-gray-600 mb-10">
+            Découvrez mes réalisations en informatique, réseaux et télécommunications.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+            <div class="carte-projet">
+                <h3>Amazon Scraper</h3>
+                <p>
+                    Collecte automatisée d'informations sur les produits technologiques disponibles sur Amazon.fr.
+                </p>
+                <p>Technologies : Python, Selenium, BeautifulSoup.</p>
+                <a href="https://github.com/kkdnamizata-netizen/Amazon-Scraper-main"
+                   target="_blank" rel="noopener noreferrer">
+                    Voir sur GitHub
+                </a>
+            </div>
+
+            <div class="carte-projet">
+                <h3>Mise en réseau de plusieurs ordinateurs</h3>
+                <p>
+                    Connexion de plusieurs ordinateurs à l'aide d'un switch et configuration des adresses IP pour permettre leur communication.
+                </p>
+                <p>Domaine : Réseaux informatiques.</p>
+            </div>
+
+            <div class="carte-projet">
+                <h3>Manipulation de la fibre optique</h3>
+                <p>
+                    Réalisation de manipulations pratiques autour de la fibre optique.
+                </p>
+                <p>Domaine : Réseaux et télécommunications.</p>
+            </div>
+
+            <div class="carte-projet">
+                <h3>Sertissage de câbles Ethernet RJ45</h3>
+                <p>
+                    Réalisation de câbles Ethernet RJ45 dans le cadre des activités pratiques en réseau.
+                </p>
+                <p>Domaine : Câblage réseau.</p>
+            </div>
+
+            <div class="carte-projet">
+                <h3>Gestion universitaire</h3>
+                <p>
+                    Conception d'un projet de gestion universitaire portant sur l'organisation et la gestion des informations universitaires.
+                </p>
+                <p>Domaine : Bases de données relationnelles.</p>
+            </div>
+
+            <div class="carte-projet">
+                <h3>Gestion de bibliothèque</h3>
+                <p>
+                    Application de gestion des livres, auteurs, lecteurs, emprunts, retours, catégories et rayons.
+                </p>
+                <p>Technologies : Python, SQLite et Tkinter.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="video" class="bg-white py-16 px-6 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-5">Ma vidéo de présentation</h2>
+
+            <p class="text-lg text-gray-600 mb-8">
+                Découvrez ma présentation personnelle et mon parcours.
+            </p>
+
+            <div class="max-w-3xl mx-auto">
+                <video controls class="w-full rounded-xl shadow-xl">
+                    <source src="video/PRESENTATION1" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture vidéo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="bg-clair py-16 text-center px-6">
+        <h2 class="text-3xl font-bold mb-5">Mon CV</h2>
+
+        <p class="mb-7 text-lg">
+            Consultez et téléchargez mon CV au format PDF.
+        </p>
+
+        <a href="documents/CV.pdf"
+           download
+           class="inline-block bg-principal text-white font-semibold py-3 px-7 rounded-lg hover:bg-secondaire transition">
+            Télécharger mon CV PDF
+        </a>
+    </section>
+
+    <section id="contact" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-5 text-center">Me contacter</h2>
+
+        <p class="text-center mb-8 text-lg">
+            Vous souhaitez me contacter ?
+        </p>
+
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg mb-8">
+
+            <div class="mb-6">
+                <h3 class="font-bold text-lg mb-2">Adresse e-mail</h3>
+                <a href="mailto:kkdnamizata@gmail.com" class="text-secondaire hover:underline">
+                    kkdnamizata@gmail.com
+                </a>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-lg mb-2">Téléphone</h3>
+                <a href="tel:+2250747479091" class="text-secondaire hover:underline">
+                    +225 07 47 47 90 91
+                </a>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-lg mb-2">Mon profil GitHub</h3>
+                <a href="https://github.com/kkdnamizata-netizen"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="text-secondaire hover:underline">
+                    github.com/kkdnamizata-netizen
+                </a>
+            </div>
+
+        </div>
+
+        <form id="contactForm" class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+
+            <div class="mb-5">
+                <label class="block mb-2 font-semibold" for="name">Nom</label>
+                <input type="text" id="name" name="name" required class="w-full border rounded-lg p-3">
+            </div>
+
+            <div class="mb-5">
+                <label class="block mb-2 font-semibold" for="email">E-mail</label>
+                <input type="email" id="email" name="email" required class="w-full border rounded-lg p-3">
+            </div>
+
+            <div class="mb-5">
+                <label class="block mb-2 font-semibold" for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required class="w-full border rounded-lg p-3"></textarea>
+            </div>
+
+            <button type="submit" class="bg-principal text-white font-semibold py-3 px-8 rounded-lg hover:bg-secondaire transition">
+                Envoyer
+            </button>
+
+        </form>
+    </section>
+
+    <footer class="bg-principal text-white py-6 text-center">
+        <p>© 2026 Kamagate Khady Djamila Namizata – Portfolio</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```
